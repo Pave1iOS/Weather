@@ -143,15 +143,16 @@ struct ContentView: View {
                 )
             }
         }
+        
     }
     
     private func calculate(side: Double, toPoint point: Double) -> Double {
-        let intermediateResult = side / point
-        return side / intermediateResult
+        let intermediateResult = point / side
+        return side * intermediateResult
     }
 }
 
 #Preview {
     ContentView()
-        .frame(width: 241, height: 147)
+        .frame(width: 300, height: 300)
 }
