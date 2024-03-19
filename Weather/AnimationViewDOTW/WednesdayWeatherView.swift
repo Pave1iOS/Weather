@@ -7,30 +7,26 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct WednesdayWeatherView: View {
     @State private var start = false
-    
-    var foreverAnimation: Animation {
-        Animation.easeInOut(duration: 2.0)
-            .repeatForever(autoreverses: true)
-    }
     
     var body: some View {
         ZStack {
             Color.white
-            
+                .ignoresSafeArea()
             
             VStack {
-                Text("Среда, дождь")
+                Text("Среда, небольшой дождь")
                     .font(.system(size: 20, design: .rounded))
                     .fontWeight(.heavy)
                     .foregroundStyle(Color(red: 165/255, green: 207/255, blue: 255/255))
-                    .padding(.top, 30)
+                    .padding(.top, 50)
+                
                 Text("+16")
                     .font(.system(size: 50, design: .rounded))
                     .fontWeight(.heavy)
                     .foregroundStyle(Color(red: 61/255, green: 145/255, blue: 235/255))
-                    .padding(.top, 10)
+                    .padding(.top, -10)
                 
                 Spacer()
                 
@@ -53,8 +49,8 @@ struct ContentView: View {
                             value: start
                         )
                         .offset(y: start
-                                ? UIScreen.main.bounds.width - 410
-                                : UIScreen.main.bounds.width - 440)
+                                ? UIScreen.main.bounds.width - 480
+                                : UIScreen.main.bounds.width - 450)
                     
                     CloudView()
                         .animation(
@@ -66,6 +62,7 @@ struct ContentView: View {
                                 : UIScreen.main.bounds.width - 410)
                 }
                 .frame(width: 300, height: 200)
+                .padding(.top, -50)
                 
                 HStack(spacing: 50) {
                     DropView().frame(width: 50, height: 50)
@@ -117,7 +114,8 @@ struct ContentView: View {
                 Spacer()
             }
         }
-        .frame(width: 350, height: 700)
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+        
         .onAppear() {
             start.toggle()
         }
@@ -125,6 +123,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
-        .frame(width: 261, height: 147)
+    WednesdayWeatherView()
 }
