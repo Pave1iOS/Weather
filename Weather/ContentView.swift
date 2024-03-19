@@ -11,47 +11,29 @@ struct ContentView: View {
     @State private var start = false
     
     var body: some View {
-        
-        GeometryReader { geometry in
+        ZStack {
+            Color.white
+            
             VStack {
-                
                 ZStack {
                     SunView()
-                        .offset(
-                            y: start
-                            ? geometry.size.width - 250
-                            : geometry.size.width - 280
-                        )
-                    
                     CloudView()
-                        .offset(
-                            x: start
-                            ? geometry.size.width - 260
-                            : geometry.size.width - 280
-                        )
                 }
                 .frame(width: 300, height: 200)
-                
-                
-                HStack(spacing: 80) {
-                    DropView()
-                        .frame(width: 50, height: 50)
-                    
-                    DropView()
-                        .frame(width: 50, height: 50)
+            
+                HStack(spacing: 50) {
+                    DropView().frame(width: 50, height: 50)
+                    DropView().frame(width: 50, height: 50)
                 }
-                DropView()
-                    .frame(width: 50, height: 50)
+                DropView().frame(width: 50, height: 50)
             }
-            .animation(.easeInOut, value: start)
             
         }
-        
+        .frame(width: 350, height: 700)
     }
-    
 }
 
 #Preview {
     ContentView()
-        .frame(width: 241, height: 147)
+        .frame(width: 261, height: 147)
 }
