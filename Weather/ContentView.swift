@@ -8,29 +8,47 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var start = false
+    
     var body: some View {
         
-        VStack {
-            
-            ZStack {
-                SunView()
-                    .offset(y: -20)
-                CloudView()
-            }
-            .frame(width: 300, height: 200)
-            
-            HStack(spacing: 80) {
-                DropView()
-                    .frame(width: 50, height: 50)
+        GeometryReader { geometry in
+            VStack {
                 
+                ZStack {
+                    SunView()
+                        .offset(
+                            y: start
+                            ? geometry.size.width - 250
+                            : geometry.size.width - 280
+                        )
+                    
+                    CloudView()
+                        .offset(
+                            x: start
+                            ? geometry.size.width - 260
+                            : geometry.size.width - 280
+                        )
+                }
+                .frame(width: 300, height: 200)
+                
+                
+                HStack(spacing: 80) {
+                    DropView()
+                        .frame(width: 50, height: 50)
+                    
+                    DropView()
+                        .frame(width: 50, height: 50)
+                }
                 DropView()
                     .frame(width: 50, height: 50)
             }
-            DropView()
-                .frame(width: 50, height: 50)
+            .animation(.easeInOut, value: start)
+            
         }
         
     }
+    
 }
 
 #Preview {

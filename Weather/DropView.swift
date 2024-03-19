@@ -96,6 +96,7 @@ struct DropView: View {
 
                 }
                 .foregroundStyle(.white)
+                .offset(x: -2, y: -2)
                 
                 Path { path in
                     path.move(
