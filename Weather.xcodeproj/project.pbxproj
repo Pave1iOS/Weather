@@ -11,7 +11,9 @@
 		46E691A82BA85E5E00113066 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E691A72BA85E5E00113066 /* ContentView.swift */; };
 		46E691AA2BA85E6000113066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E691A92BA85E6000113066 /* Assets.xcassets */; };
 		46E691AD2BA85E6000113066 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E691AC2BA85E6000113066 /* Preview Assets.xcassets */; };
-		46E691B42BA9CE0300113066 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E691B32BA9CE0300113066 /* Cloud.swift */; };
+		46E691B42BA9CE0300113066 /* CloudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E691B32BA9CE0300113066 /* CloudView.swift */; };
+		46E691BA2BA9DB9C00113066 /* SunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E691B92BA9DB9C00113066 /* SunView.swift */; };
+		46E691BC2BA9E38B00113066 /* DropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E691BB2BA9E38B00113066 /* DropView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +22,9 @@
 		46E691A72BA85E5E00113066 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		46E691A92BA85E6000113066 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46E691AC2BA85E6000113066 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		46E691B32BA9CE0300113066 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		46E691B32BA9CE0300113066 /* CloudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudView.swift; sourceTree = "<group>"; };
+		46E691B92BA9DB9C00113066 /* SunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunView.swift; sourceTree = "<group>"; };
+		46E691BB2BA9E38B00113066 /* DropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			children = (
 				46E691A52BA85E5E00113066 /* WeatherApp.swift */,
 				46E691A72BA85E5E00113066 /* ContentView.swift */,
-				46E691B32BA9CE0300113066 /* Cloud.swift */,
+				46E691BB2BA9E38B00113066 /* DropView.swift */,
+				46E691B32BA9CE0300113066 /* CloudView.swift */,
+				46E691B92BA9DB9C00113066 /* SunView.swift */,
 				46E691A92BA85E6000113066 /* Assets.xcassets */,
 				46E691AB2BA85E6000113066 /* Preview Content */,
 			);
@@ -141,8 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				46E691A82BA85E5E00113066 /* ContentView.swift in Sources */,
-				46E691B42BA9CE0300113066 /* Cloud.swift in Sources */,
+				46E691BA2BA9DB9C00113066 /* SunView.swift in Sources */,
+				46E691B42BA9CE0300113066 /* CloudView.swift in Sources */,
 				46E691A62BA85E5E00113066 /* WeatherApp.swift in Sources */,
+				46E691BC2BA9E38B00113066 /* DropView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

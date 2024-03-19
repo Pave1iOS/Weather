@@ -10,7 +10,25 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        Cloud()
+        VStack {
+            
+            ZStack {
+                SunView()
+                    .offset(y: -20)
+                CloudView()
+            }
+            .frame(width: 300, height: 200)
+            
+            HStack(spacing: 80) {
+                DropView()
+                    .frame(width: 50, height: 50)
+                
+                DropView()
+                    .frame(width: 50, height: 50)
+            }
+            DropView()
+                .frame(width: 50, height: 50)
+        }
         
     }
 }
