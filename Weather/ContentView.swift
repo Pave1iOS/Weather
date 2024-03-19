@@ -21,135 +21,135 @@ struct ContentView: View {
                 // puff (start)
                 path.move(
                     to: CGPoint(
-                        x: calculate(side: width, toPoint: 0.29),
-                        y: calculate(side: height, toPoint: 0.28)
+                        x: multiply(sideValue: width, toCoefficient: 0.29),
+                        y: multiply(sideValue: height, toCoefficient: 0.28)
                     )
                 )
                 // puff (1)
                 path.addQuadCurve(
                     to: CGPoint(
-                        x: width * 0.48,
-                        y: height * 0.08
+                        x: multiply(sideValue: width, toCoefficient: 0.48),
+                        y: multiply(sideValue: height, toCoefficient: 0.08)
                     ),
                     control: CGPoint(
-                        x: width * 0.35,
-                        y: height * 0.08
+                        x: multiply(sideValue: width, toCoefficient: 0.35),
+                        y: multiply(sideValue: height, toCoefficient: 0.08)
                     )
                 )
                 // 241, 147
                 // puff (2)
                 path.addQuadCurve(
                     to: CGPoint(
-                        x: width * 0.65,
-                        y: height * 0.27
+                        x: multiply(sideValue: width, toCoefficient: 0.65),
+                        y: multiply(sideValue: height, toCoefficient: 0.27)
                     ),
                     control: CGPoint(
-                        x: width * 0.62,
-                        y: height * 0.09
+                        x: multiply(sideValue: width, toCoefficient: 0.62),
+                        y: multiply(sideValue: height, toCoefficient: 0.09)
                     )
                 )
                 
                 // puff (3)
                 path.addQuadCurve(
                     to: CGPoint(
-                        x: width * 0.84,
-                        y: height * 0.47
+                        x: multiply(sideValue: width, toCoefficient: 0.84),
+                        y: multiply(sideValue: height, toCoefficient: 0.47)
                     ),
                     control: CGPoint(
-                        x: width * 0.81,
-                        y: height * 0.30
+                        x: multiply(sideValue: width, toCoefficient: 0.81),
+                        y: multiply(sideValue: height, toCoefficient: 0.30)
                     )
                 )
                 
                 // puff (4)
                 path.addQuadCurve(
                     to: CGPoint(
-                        x: width * 0.98,
-                        y: height * 0.68
+                        x: multiply(sideValue: width, toCoefficient: 0.98),
+                        y: multiply(sideValue: height, toCoefficient: 0.68)
                     ),
                     control: CGPoint(
-                        x: width * 0.99,
-                        y: height * 0.47
+                        x: multiply(sideValue: width, toCoefficient: 0.99),
+                        y: multiply(sideValue: height, toCoefficient: 0.47)
                     )
                 )
                 
                 // puff (5)
                 path.addQuadCurve(
                     to: CGPoint(
-                        x: width * 0.79,
-                        y: height * 0.80
+                        x: multiply(sideValue: width, toCoefficient: 0.79),
+                        y: multiply(sideValue: height, toCoefficient: 0.80)
                     ),
                     control: CGPoint(
-                        x: width * 0.97,
-                        y: height * 0.87
+                        x: multiply(sideValue: width, toCoefficient: 0.97),
+                        y: multiply(sideValue: height, toCoefficient: 0.87)
                     )
                 )
                 
                 // puff (6)
                 path.addQuadCurve(
                     to: CGPoint(
-                        x: width * 0.60,
-                        y: height * 0.85
+                        x: multiply(sideValue: width, toCoefficient: 0.60),
+                        y: multiply(sideValue: height, toCoefficient: 0.85)
                     ),
                     control: CGPoint(
-                        x: width * 0.70,
-                        y: height * 0.92
+                        x: multiply(sideValue: width, toCoefficient: 0.70),
+                        y: multiply(sideValue: height, toCoefficient: 0.92)
                     )
                 )
                 
                 // puff (7)
                 path.addQuadCurve(
                     to: CGPoint(
-                        x: width * 0.37,
-                        y: height * 0.85
+                        x: multiply(sideValue: width, toCoefficient: 0.37),
+                        y: multiply(sideValue: height, toCoefficient: 0.85)
                     ),
                     control: CGPoint(
-                        x: width * 0.49,
-                        y: height * 0.96
+                        x: multiply(sideValue: width, toCoefficient: 0.49),
+                        y: multiply(sideValue: height, toCoefficient: 0.96)
                     )
                 )
                 
                 // puff (8)
                 path.addQuadCurve(
                     to: CGPoint(
-                        x: width * 0.12,
-                        y: height * 0.89
+                        x: multiply(sideValue: width, toCoefficient: 0.12),
+                        y: multiply(sideValue: height, toCoefficient: 0.89)
                     ),
                     control: CGPoint(
-                        x: width * 0.26,
-                        y: height * 0.96
+                        x: multiply(sideValue: width, toCoefficient: 0.26),
+                        y: multiply(sideValue: height, toCoefficient: 0.96)
                     )
                 )
                                 
                 // puff (9)
                 path.addQuadCurve(
                     to: CGPoint(
-                        x: width * 0.04,
-                        y: height * 0.55
+                        x: multiply(sideValue: width, toCoefficient: 0.04),
+                        y: multiply(sideValue: height, toCoefficient: 0.55)
                     ),
                     control: CGPoint(
-                        x: width * 0.004,
-                        y: height * 0.80
+                        x: multiply(sideValue: width, toCoefficient: 0.004),
+                        y: multiply(sideValue: height, toCoefficient: 0.80)
                     )
                 )
                 
                 // puff (10)
                 path.addQuadCurve(
                     to: CGPoint(
-                        x: width * 0.29,
-                        y: height * 0.28
+                        x: multiply(sideValue: width, toCoefficient: 0.29),
+                        y: multiply(sideValue: height, toCoefficient: 0.28)
                     ),
                     control: CGPoint(
-                        x: width * 0.09,
-                        y: height * 0.34
+                        x: multiply(sideValue: width, toCoefficient: 0.09),
+                        y: multiply(sideValue: height, toCoefficient: 0.34)
                     )
                 )
             }
         }
     }
     
-    private func calculate(side: Double, toPoint point: Double) -> Double {
-        return side * point
+    private func multiply(sideValue: Double, toCoefficient point: Double) -> Double {
+        return sideValue * point
     }
 }
 
