@@ -22,7 +22,7 @@ struct MondayWeatherView: View {
                     .foregroundStyle(Color(red: 165/255, green: 207/255, blue: 255/255))
                     .padding(.top, 50)
                 
-                Text("+18")
+                Text("+16")
                     .font(.system(size: 50, design: .rounded))
                     .fontWeight(.heavy)
                     .foregroundStyle(Color(red: 61/255, green: 145/255, blue: 235/255))
