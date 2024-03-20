@@ -11,6 +11,7 @@
 		46768E9E2BAA328300C5E476 /* TuesdayWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46768E9D2BAA328300C5E476 /* TuesdayWeatherView.swift */; };
 		46768EA02BAA32E100C5E476 /* LightningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46768E9F2BAA32E100C5E476 /* LightningView.swift */; };
 		46768EA22BAA37EF00C5E476 /* RaySunshineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46768EA12BAA37EF00C5E476 /* RaySunshineView.swift */; };
+		46768EA42BAA509E00C5E476 /* ThursdayWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46768EA32BAA509E00C5E476 /* ThursdayWeatherView.swift */; };
 		46E691A62BA85E5E00113066 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E691A52BA85E5E00113066 /* WeatherApp.swift */; };
 		46E691A82BA85E5E00113066 /* WednesdayWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E691A72BA85E5E00113066 /* WednesdayWeatherView.swift */; };
 		46E691AA2BA85E6000113066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E691A92BA85E6000113066 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		46768E9D2BAA328300C5E476 /* TuesdayWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuesdayWeatherView.swift; sourceTree = "<group>"; };
 		46768E9F2BAA32E100C5E476 /* LightningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningView.swift; sourceTree = "<group>"; };
 		46768EA12BAA37EF00C5E476 /* RaySunshineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaySunshineView.swift; sourceTree = "<group>"; };
+		46768EA32BAA509E00C5E476 /* ThursdayWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThursdayWeatherView.swift; sourceTree = "<group>"; };
 		46E691A22BA85E5E00113066 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E691A52BA85E5E00113066 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		46E691A72BA85E5E00113066 /* WednesdayWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WednesdayWeatherView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 				46E691A72BA85E5E00113066 /* WednesdayWeatherView.swift */,
 				46768E9A2BAA255D00C5E476 /* MondayWeatherView.swift */,
 				46768E9D2BAA328300C5E476 /* TuesdayWeatherView.swift */,
+				46768EA32BAA509E00C5E476 /* ThursdayWeatherView.swift */,
 			);
 			path = AnimationViewDOTW;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				46768EA02BAA32E100C5E476 /* LightningView.swift in Sources */,
 				46E691BA2BA9DB9C00113066 /* SunView.swift in Sources */,
 				46E691B42BA9CE0300113066 /* CloudView.swift in Sources */,
+				46768EA42BAA509E00C5E476 /* ThursdayWeatherView.swift in Sources */,
 				46768EA22BAA37EF00C5E476 /* RaySunshineView.swift in Sources */,
 				46E691A62BA85E5E00113066 /* WeatherApp.swift in Sources */,
 				46768E9B2BAA255D00C5E476 /* MondayWeatherView.swift in Sources */,

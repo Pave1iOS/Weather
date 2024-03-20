@@ -14,54 +14,265 @@ struct LightningView: View {
             let width = geometry.size.width // x
             let height = geometry.size.height // y
             
+            
             Path { path in
-                // puff (start)
                 path.move(
                     to: CGPoint(
-                        x: multiply(sideValue: width, toCoefficient: 0.11),
-                        y: multiply(sideValue: height, toCoefficient: 0.35)
+                        x: multiply(sideValue: width, toCoefficient: 0.81),
+                        y: multiply(sideValue: height, toCoefficient: 0.05)
                     )
                 )
                 
                 path.addLine(
                     to: CGPoint(
-                        x: multiply(sideValue: width, toCoefficient: 0.95),
-                        y: multiply(sideValue: height, toCoefficient: 0.35)
-                    )
-                )
-                
-                path.addQuadCurve(
-                    to: CGPoint(
-                        x: multiply(sideValue: width, toCoefficient: 0.95),
-                        y: multiply(sideValue: height, toCoefficient: 0.60)
-                    ),
-                    control: CGPoint(
-                        x: multiply(sideValue: width, toCoefficient: 0.98),
-                        y: multiply(sideValue: height, toCoefficient: 0.50)
+                        x: multiply(sideValue: width, toCoefficient: 0.61),
+                        y: multiply(sideValue: height, toCoefficient: 0.33)
                     )
                 )
                 
                 path.addLine(
                     to: CGPoint(
-                        x: multiply(sideValue: width, toCoefficient: 0.04),
-                        y: multiply(sideValue: height, toCoefficient: 0.60)
+                        x: multiply(sideValue: width, toCoefficient: 0.69),
+                        y: multiply(sideValue: height, toCoefficient: 0.31)
                     )
                 )
                 
-                path.addQuadCurve(
+                path.addLine(
                     to: CGPoint(
-                        x: multiply(sideValue: width, toCoefficient: 0.04),
-                        y: multiply(sideValue: height, toCoefficient: 0.35)
-                    ),
-                    control: CGPoint(
-                        x: multiply(sideValue: width, toCoefficient: 0.01),
-                        y: multiply(sideValue: height, toCoefficient: 0.50)
+                        x: multiply(sideValue: width, toCoefficient: 0.53),
+                        y: multiply(sideValue: height, toCoefficient: 0.54)
                     )
                 )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.63),
+                        y: multiply(sideValue: height, toCoefficient: 0.51)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.17),
+                        y: multiply(sideValue: height, toCoefficient: 0.93)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.33),
+                        y: multiply(sideValue: height, toCoefficient: 0.63)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.25),
+                        y: multiply(sideValue: height, toCoefficient: 0.65)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.35),
+                        y: multiply(sideValue: height, toCoefficient: 0.44)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.26),
+                        y: multiply(sideValue: height, toCoefficient: 0.46)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.42),
+                        y: multiply(sideValue: height, toCoefficient: 0.14)
+                    )
+                )
+                
+                path.closeSubpath()
                 
             }
+            .foregroundStyle(.white)
+            
+            // lightning
+            Path { path in
+                path.move(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.81),
+                        y: multiply(sideValue: height, toCoefficient: 0.05)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.61),
+                        y: multiply(sideValue: height, toCoefficient: 0.33)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.69),
+                        y: multiply(sideValue: height, toCoefficient: 0.31)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.53),
+                        y: multiply(sideValue: height, toCoefficient: 0.54)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.63),
+                        y: multiply(sideValue: height, toCoefficient: 0.51)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.17),
+                        y: multiply(sideValue: height, toCoefficient: 0.93)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.33),
+                        y: multiply(sideValue: height, toCoefficient: 0.63)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.25),
+                        y: multiply(sideValue: height, toCoefficient: 0.65)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.35),
+                        y: multiply(sideValue: height, toCoefficient: 0.44)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.26),
+                        y: multiply(sideValue: height, toCoefficient: 0.46)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.42),
+                        y: multiply(sideValue: height, toCoefficient: 0.14)
+                    )
+                )
+                
+                path.closeSubpath()
+                
+            }
+            .offset(x: 2)
+            .foregroundStyle(
+                Color(
+                    red: 248/255,
+                    green: 201/255,
+                    blue: 27/255
+                )
+            )
+            // Lightning - stroke
+            Path { path in
+                path.move(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.81),
+                        y: multiply(sideValue: height, toCoefficient: 0.05)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.61),
+                        y: multiply(sideValue: height, toCoefficient: 0.33)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.69),
+                        y: multiply(sideValue: height, toCoefficient: 0.31)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.53),
+                        y: multiply(sideValue: height, toCoefficient: 0.54)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.63),
+                        y: multiply(sideValue: height, toCoefficient: 0.51)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.17),
+                        y: multiply(sideValue: height, toCoefficient: 0.93)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.33),
+                        y: multiply(sideValue: height, toCoefficient: 0.63)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.25),
+                        y: multiply(sideValue: height, toCoefficient: 0.65)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.35),
+                        y: multiply(sideValue: height, toCoefficient: 0.44)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.26),
+                        y: multiply(sideValue: height, toCoefficient: 0.46)
+                    )
+                )
+                
+                path.addLine(
+                    to: CGPoint(
+                        x: multiply(sideValue: width, toCoefficient: 0.42),
+                        y: multiply(sideValue: height, toCoefficient: 0.14)
+                    )
+                )
+                
+                path.closeSubpath()
+                
+            }
+            .stroke(lineWidth: 1)
+            .foregroundStyle(.yellow)
         }
-        .frame(width: 100, height: 20)
     }
     
     private func multiply(sideValue: Double, toCoefficient point: Double) -> Double {
