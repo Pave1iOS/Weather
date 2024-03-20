@@ -12,12 +12,10 @@ struct NextDayButton: View {
     
     var body: some View {
         ZStack {
-            Button(action: {
-                weekDay.changeDay()
-            print("two")}) {
+            Button(action: {weekDay.changeDay()}) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 5.0)
-                        .frame(width: 100, height: 50)
+                        .frame(width: 100, height: 40)
                         .foregroundStyle(.clear)
                         .overlay(
                             RoundedRectangle(
@@ -27,6 +25,7 @@ struct NextDayButton: View {
                         
                     
                     Text("next day")
+                        .textCase(.uppercase)
                         .foregroundStyle(.gray)
                         .font(.system(size: 15, design: .rounded))
                         .fontWeight(.heavy)

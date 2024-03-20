@@ -67,7 +67,11 @@ struct ThursdayWeatherView: View {
                                 .offset(x: 35, y: 290)
                                 .rotationEffect(.degrees(15))
                                 .animation(
-                                    .easeInOut(duration: 2.0).repeatForever().delay(1),
+                                    .spring(
+                                        response: 0.35,
+                                        dampingFraction: 0.45,
+                                        blendDuration: 0
+                                    ).repeatForever().delay(1),
                                     value: start
                                 )
                                 .offset(y: start
@@ -79,7 +83,11 @@ struct ThursdayWeatherView: View {
                                 .offset(x: 35, y: 220)
                                 .rotationEffect(.degrees(15))
                                 .animation(
-                                    .easeInOut(duration: 2.0).repeatForever(),
+                                    .spring(
+                                        response: 0.35,
+                                        dampingFraction: 0.45,
+                                        blendDuration: 0
+                                    ).repeatForever(),
                                     value: start
                                 )
                                 .offset(y: start
@@ -91,7 +99,11 @@ struct ThursdayWeatherView: View {
                                 .offset(x: 50, y: 290)
                                 .rotationEffect(.degrees(15))
                                 .animation(
-                                    .easeInOut(duration: 2.0).repeatForever().delay(2),
+                                    .spring(
+                                        response: 0.35,
+                                        dampingFraction: 0.45,
+                                        blendDuration: 0
+                                    ).repeatForever().delay(2),
                                     value: start
                                 )
                                 .offset(y: start

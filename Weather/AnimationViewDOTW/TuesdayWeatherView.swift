@@ -54,28 +54,46 @@ struct TuesdayWeatherView: View {
                     
                     
                     Circle()
-                        .frame(width: 150)
-                        .foregroundStyle(Color(red: 252/255, green: 198/255, blue: 41/255))
-                    
-                    Circle()
                         .fill(
                             RadialGradient(
                                 gradient: Gradient(
                                     colors: [
                                         Color(
-                                            red: 244/255,
-                                            green: 175/255,
-                                            blue: 50/255
-                                        ),
-                                        .clear,
+                                            red: 255/255,
+                                            green: 149/255,
+                                            blue: 0/255
+                                        ),.clear
+                                        
                                     ]
                                 ),
                                 center: .center,
-                                startRadius: 2,
-                                endRadius: 70
+                                startRadius: 190,
+                                endRadius: 60
+                            )
+                        )
+                        .frame(width: 150)
+                    
+                    Circle()
+                        .fill(
+                            RadialGradient(
+                                gradient: Gradient(
+                                    colors: [.clear,
+                                        Color(
+                                            red: 255/255,
+                                            green: 128/255,
+                                            blue: 0/255
+                                        )
+                                        
+                                    ]
+                                ),
+                                center: .center,
+                                startRadius: 50,
+                                endRadius: 20
                             )
                         )
                         .frame(width: 100)
+                        .scaleEffect(start ? 0.9 : 1.6)
+                        .animation(.easeInOut(duration: 2).repeatForever(), value: start)
                     
                     RaySunshineView(color: Color(red: 244/255, green: 175/255, blue: 50/255))
                         .rotationEffect(.degrees(start ? 0 : 720))
