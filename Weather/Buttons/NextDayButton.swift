@@ -20,17 +20,16 @@ struct NextDayButton: View {
                         .overlay(
                             RoundedRectangle(
                                 cornerRadius: 5.0
-                            ).stroke(Color.gray, lineWidth: 2)
+                            ).stroke(Color.gray, lineWidth: 1)
                         )
-                        
-                    
+                                            
                     Text("next day")
                         .textCase(.uppercase)
                         .foregroundStyle(.gray)
                         .font(.system(size: 15, design: .rounded))
                         .fontWeight(.heavy)
                 }
-                .opacity(0.5)
+                .opacity(0.3)
                 
             }
         }
