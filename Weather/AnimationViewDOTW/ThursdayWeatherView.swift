@@ -99,15 +99,6 @@ struct ThursdayWeatherView: View {
                         }
                         
                         HStack(spacing: 50) {
-                            DropView().frame(width: 50, height: 50)
-                                .animation(
-                                    .easeInOut(duration: 2.0).repeatForever().delay(1.5),
-                                    value: start
-                                )
-                                .offset(x: 70, y: 150)
-                                .offset(y: start
-                                        ? UIScreen.main.bounds.width - 400
-                                        : UIScreen.main.bounds.width - 470)
                             
                             DropView().frame(width: 50, height: 50)
                                 .animation(
@@ -124,7 +115,7 @@ struct ThursdayWeatherView: View {
                                     .easeInOut(duration: 2.0).repeatForever().delay(1),
                                     value: start
                                 )
-                                .offset(x: 70, y: 150)
+                                .offset(x: -120, y: 250)
                                 .offset(y: start
                                         ? UIScreen.main.bounds.width - 400
                                         : UIScreen.main.bounds.width - 470)
@@ -136,16 +127,6 @@ struct ThursdayWeatherView: View {
                                         value: start
                                     )
                                     .offset(x: -70, y: 250)
-                                    .offset(y: start
-                                            ? UIScreen.main.bounds.width - 400
-                                            : UIScreen.main.bounds.width - 470)
-                                
-                                DropView().frame(width: 50, height: 50)
-                                    .animation(
-                                        .easeInOut(duration: 2.0).repeatForever().delay(1),
-                                        value: start
-                                    )
-                                    .offset(x: -310, y: 250)
                                     .offset(y: start
                                             ? UIScreen.main.bounds.width - 400
                                             : UIScreen.main.bounds.width - 470)
