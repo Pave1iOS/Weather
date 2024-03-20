@@ -11,6 +11,7 @@ struct ThursdayWeatherView: View {
     @State private var start = false
 
     var body: some View {
+        
         ZStack {
             Color.white
                 .ignoresSafeArea()
@@ -137,11 +138,12 @@ struct ThursdayWeatherView: View {
                     
                 }.padding(.top, -200)
                 
-                Spacer()
+                Spacer()                
             }
             
             
-        }.onAppear(){
+        }
+        .onAppear(){
             start.toggle()
         }
     }
