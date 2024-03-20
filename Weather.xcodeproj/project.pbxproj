@@ -80,20 +80,20 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		46768EB42BAA78F200C5E476 /* ViewModel */ = {
+		46768EB42BAA78F200C5E476 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				46768EB02BAA71F000C5E476 /* WeekDayViewModel.swift */,
 			);
-			path = ViewModel;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		46768EB52BAA78FC00C5E476 /* Model */ = {
+		46768EB52BAA78FC00C5E476 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				46768EAE2BAA70CF00C5E476 /* Weather.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		46768EB62BAA790800C5E476 /* Buttons */ = {
@@ -127,8 +127,8 @@
 				46768E9C2BAA25C700C5E476 /* AnimationViewDOTW */,
 				46768EA52BAA5F3100C5E476 /* Views */,
 				46768EB62BAA790800C5E476 /* Buttons */,
-				46768EB52BAA78FC00C5E476 /* Model */,
-				46768EB42BAA78F200C5E476 /* ViewModel */,
+				46768EB52BAA78FC00C5E476 /* Models */,
+				46768EB42BAA78F200C5E476 /* ViewModels */,
 				46E691A92BA85E6000113066 /* Assets.xcassets */,
 				46E691AB2BA85E6000113066 /* Preview Content */,
 			);
