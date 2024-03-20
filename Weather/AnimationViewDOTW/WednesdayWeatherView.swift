@@ -62,7 +62,6 @@ struct WednesdayWeatherView: View {
                                 : UIScreen.main.bounds.width - 410)
                 }
                 .frame(width: 300, height: 200)
-                .padding(.top, -50)
                 
                 HStack(spacing: 50) {
                     DropView().frame(width: 50, height: 50)
@@ -112,6 +111,7 @@ struct WednesdayWeatherView: View {
                                 : UIScreen.main.bounds.width - 470)
                 }
                 Spacer()
+                NextDayButton()
             }
         }        
         .onAppear() {

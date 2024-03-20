@@ -87,6 +87,7 @@ struct TuesdayWeatherView: View {
                     start.toggle()
                 }
                 Spacer()
+                NextDayButton()
             }
         }
     }

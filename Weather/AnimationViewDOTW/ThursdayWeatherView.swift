@@ -138,7 +138,8 @@ struct ThursdayWeatherView: View {
                     
                 }.padding(.top, -200)
                 
-                Spacer()                
+                Spacer()   
+                NextDayButton()
             }
             
             

@@ -12,6 +12,10 @@
 		46768EA02BAA32E100C5E476 /* LightningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46768E9F2BAA32E100C5E476 /* LightningView.swift */; };
 		46768EA22BAA37EF00C5E476 /* RaySunshineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46768EA12BAA37EF00C5E476 /* RaySunshineView.swift */; };
 		46768EA42BAA509E00C5E476 /* ThursdayWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46768EA32BAA509E00C5E476 /* ThursdayWeatherView.swift */; };
+		46768EAD2BAA691A00C5E476 /* NextDayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46768EAC2BAA691A00C5E476 /* NextDayButton.swift */; };
+		46768EAF2BAA70CF00C5E476 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46768EAE2BAA70CF00C5E476 /* Weather.swift */; };
+		46768EB12BAA71F000C5E476 /* WeekDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46768EB02BAA71F000C5E476 /* WeekDayViewModel.swift */; };
+		46768EB32BAA732E00C5E476 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46768EB22BAA732E00C5E476 /* RootView.swift */; };
 		46E691A62BA85E5E00113066 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E691A52BA85E5E00113066 /* WeatherApp.swift */; };
 		46E691A82BA85E5E00113066 /* WednesdayWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E691A72BA85E5E00113066 /* WednesdayWeatherView.swift */; };
 		46E691AA2BA85E6000113066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E691A92BA85E6000113066 /* Assets.xcassets */; };
@@ -27,6 +31,10 @@
 		46768E9F2BAA32E100C5E476 /* LightningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningView.swift; sourceTree = "<group>"; };
 		46768EA12BAA37EF00C5E476 /* RaySunshineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaySunshineView.swift; sourceTree = "<group>"; };
 		46768EA32BAA509E00C5E476 /* ThursdayWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThursdayWeatherView.swift; sourceTree = "<group>"; };
+		46768EAC2BAA691A00C5E476 /* NextDayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDayButton.swift; sourceTree = "<group>"; };
+		46768EAE2BAA70CF00C5E476 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		46768EB02BAA71F000C5E476 /* WeekDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayViewModel.swift; sourceTree = "<group>"; };
+		46768EB22BAA732E00C5E476 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		46E691A22BA85E5E00113066 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E691A52BA85E5E00113066 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		46E691A72BA85E5E00113066 /* WednesdayWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WednesdayWeatherView.swift; sourceTree = "<group>"; };
@@ -51,9 +59,10 @@
 		46768E9C2BAA25C700C5E476 /* AnimationViewDOTW */ = {
 			isa = PBXGroup;
 			children = (
-				46E691A72BA85E5E00113066 /* WednesdayWeatherView.swift */,
+				46768EB22BAA732E00C5E476 /* RootView.swift */,
 				46768E9A2BAA255D00C5E476 /* MondayWeatherView.swift */,
 				46768E9D2BAA328300C5E476 /* TuesdayWeatherView.swift */,
+				46E691A72BA85E5E00113066 /* WednesdayWeatherView.swift */,
 				46768EA32BAA509E00C5E476 /* ThursdayWeatherView.swift */,
 			);
 			path = AnimationViewDOTW;
@@ -69,6 +78,30 @@
 				46E691B92BA9DB9C00113066 /* SunView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		46768EB42BAA78F200C5E476 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				46768EB02BAA71F000C5E476 /* WeekDayViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		46768EB52BAA78FC00C5E476 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46768EAE2BAA70CF00C5E476 /* Weather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		46768EB62BAA790800C5E476 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				46768EAC2BAA691A00C5E476 /* NextDayButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		46E691992BA85E5E00113066 = {
@@ -93,6 +126,9 @@
 				46E691A52BA85E5E00113066 /* WeatherApp.swift */,
 				46768E9C2BAA25C700C5E476 /* AnimationViewDOTW */,
 				46768EA52BAA5F3100C5E476 /* Views */,
+				46768EB62BAA790800C5E476 /* Buttons */,
+				46768EB52BAA78FC00C5E476 /* Model */,
+				46768EB42BAA78F200C5E476 /* ViewModel */,
 				46E691A92BA85E6000113066 /* Assets.xcassets */,
 				46E691AB2BA85E6000113066 /* Preview Content */,
 			);
@@ -179,14 +215,18 @@
 			files = (
 				46E691A82BA85E5E00113066 /* WednesdayWeatherView.swift in Sources */,
 				46768E9E2BAA328300C5E476 /* TuesdayWeatherView.swift in Sources */,
+				46768EB12BAA71F000C5E476 /* WeekDayViewModel.swift in Sources */,
+				46768EAF2BAA70CF00C5E476 /* Weather.swift in Sources */,
 				46768EA02BAA32E100C5E476 /* LightningView.swift in Sources */,
 				46E691BA2BA9DB9C00113066 /* SunView.swift in Sources */,
 				46E691B42BA9CE0300113066 /* CloudView.swift in Sources */,
 				46768EA42BAA509E00C5E476 /* ThursdayWeatherView.swift in Sources */,
 				46768EA22BAA37EF00C5E476 /* RaySunshineView.swift in Sources */,
 				46E691A62BA85E5E00113066 /* WeatherApp.swift in Sources */,
+				46768EAD2BAA691A00C5E476 /* NextDayButton.swift in Sources */,
 				46768E9B2BAA255D00C5E476 /* MondayWeatherView.swift in Sources */,
 				46E691BC2BA9E38B00113066 /* DropView.swift in Sources */,
+				46768EB32BAA732E00C5E476 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

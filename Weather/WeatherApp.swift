@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct WeatherApp: App {
+    @StateObject private var weekday = WeekDayViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            WednesdayWeatherView()
+            RootView()
         }
+        .environmentObject(weekday)
     }
 }

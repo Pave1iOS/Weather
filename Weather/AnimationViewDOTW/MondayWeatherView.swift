@@ -76,6 +76,8 @@ struct MondayWeatherView: View {
                         .animation(.easeInOut(duration: 2).repeatForever(),value: start)
                 }
                 Spacer()
+                
+                NextDayButton()
             }
         }.onAppear() {
             start.toggle()
